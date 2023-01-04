@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles-1.css">
+    <title>Form 1</title>
+</head>
+<body>
+
+    <form>
+
+        <fieldset>
+            <label for="first-name"><span>Твоё имя</span> 
+                <input type="text" id="first-name" name="first-name" required>
+            </label>
+
+            <label for="email"><span>Твой email</span> 
+                <input type="email" id="email" name="email" required>
+            </label>
+
+            <label for="referrer"><span>Тема сообщения</span>
+                <select name="referrer" id="referrer">
+                    <option value=""></option>
+                    <option value="1">Тема сообщения - 1</option>
+                    <option value="2">Тема сообщения - 2</option>
+                    <option value="3">Тема сообщения - 3</option>
+                    <option value="4">Тема сообщения - 4</option>
+                </select> 
+            </label>
+
+            <label for="message"><span class="text">Текст&#42;</span>  
+                <textarea name="message" id="message" rows="8" cols="48"></textarea>
+            </label>
+
+            <div class="spam-protection">
+                <label for="spam"><span>Защита от спама&#42;</span><input type="text" id="spam" name="spam" required></label>
+                <img src="./image/image.png" alt="" width="120">
+                <a href="#">сменить картинку</a> 
+            </div>
+
+            <input type="submit" value="отправить">
+
+        </fieldset>
+
+    </form>
+
+
+
+</body>
+</html>

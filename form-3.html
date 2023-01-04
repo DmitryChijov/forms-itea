@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles-3.css">
+    <title>Form 3</title>
+</head>
+<body>
+    <form>
+
+<!-- шапка формы -->
+
+        <fieldset class="header">
+            <h1>Contact Manager</h1>
+            <label for="header">
+                <select name="header" id="header" class="header-label">
+                    <option value="">More Actions</option>
+                    <option value="1">Actions one</option>
+                    <option value="2">Actions two</option>
+                    <option value="3">Actions three</option>
+                    <option value="4">Actions four</option>
+                </select> 
+            </label>
+        </fieldset>
+
+<!-- тело формы  -->
+
+        <div class="body">
+            <fieldset class="left">
+
+                <label for="first-name">First Name<span>&#42;</span> 
+                    <input type="text" id="first-name" name="first-name" required>
+                </label>
+
+                <label for="last-name">Last Name<span>&#42;</span> 
+                    <input type="text" id="last-name" name="last-name" required>
+                </label>
+
+                <label for="address">Address: 
+                    <textarea name="address" id="address" rows="8" cols="20"></textarea>
+                </label>
+
+                <label for="city">City 
+                    <input type="text" id="city" name="city">
+                </label>
+
+                <label for="referrer">State
+                    <select class="state" name="referrer" id="referrer">
+                         <option value="">-Select-</option>
+                         <option value="1">Select 1</option>
+                         <option value="2">Select 2</option>
+                         <option value="3">Select 3</option>
+                         <option value="4">Select 4</option>
+                     </select> 
+                 </label>
+
+                 <label for="zip">Zip 
+                    <input type="text" id="zip" name="zip">
+                </label>
+
+                <label for="homePhone">Home Phone
+                    <input type="tel" id="homePhone" name="homePhone">
+                </label>
+
+                <label for="workPhone">Work Phone<span>&#42;</span>
+                    <input type="tel" id="workPhone" name="workPhone" required>
+                </label>
+
+                <label for="fax">Fax Number
+                    <input type="tel" id="fax" name="fax" class="fax">
+                </label>
+
+                <div class="website">
+
+                    <p>Website</p>
+
+                    <div class="website-label">
+                        <label for="website">URL
+                            <input type="url" id="website" name="Website">
+                        </label>
+                        <label for="link">Link Name
+                            <input type="url" id="link" name="link">
+                        </label>
+                    </div>
+                    
+                </div>
+
+                <label for="email">Email Address<span>&#42;</span>
+                    <input type="email" id="email" name="email" class="email" required>
+                </label>
+
+
+
+            </fieldset> 
+
+            <fieldset class="right">
+                <div class="time">
+                    <p>When is the best time to contact you?</p>
+                    <div class="time-radio">
+                        <label for="morning">
+                            <input type="radio" id="morning" name="time"> Morning
+                        </label>
+                        <label for="afternoon"> 
+                            <input type="radio" id="afternoon" name="time"> Afternoon
+                        </label>
+                        <label for="evening"> 
+                            <input type="radio" id="evening" name="time"> Evening 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <p>What is the best way to contact you?</p>
+                    <div class="contact-radio">
+                        <label for="phone">
+                            <input type="radio" id="phone" name="contact"> Phone
+                        </label>
+                        <label for="contactEmail"> 
+                            <input type="radio" id="contactEmail" name="contact"> Email
+                        </label>
+                        <label for="contactFax"> 
+                            <input type="radio" id="contactFax" name="contact"> Fax 
+                        </label>
+                    </div>
+                </div>
+
+                <label for="message">Message 
+                    <textarea name="message" id="message" rows="7" cols="25"></textarea>
+                </label>
+
+            </fieldset>
+
+        </div>
+
+<!-- подвал формы -->
+
+        <footer>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </footer>
+
+        
+
+    </form>
+</body>
+</html>

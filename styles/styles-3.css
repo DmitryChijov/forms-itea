@@ -1,0 +1,254 @@
+
+form {
+    width: 1200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin: 10px auto;
+    font-weight: bold;
+    border: 1px solid #91ba6f;
+    
+}
+
+h1 {
+    margin: 0;
+}
+
+
+label {
+    display: block;
+    margin: 0.7rem 0;
+}
+
+input {
+    padding: 4px;
+}
+
+span {
+    color: #ed3030;
+}
+
+
+.header {
+    background-color: #c1eb9f;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #91ba6f;
+    margin: 0;
+}
+
+.header-label {
+    background-color: #c1eb9f;
+    border: none;
+    margin: 10px 0 0 30px;
+    font-weight: bold;
+}
+
+/* тело формы с левой стороны */
+
+.body {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+#first-name {
+    margin-left: 17%;
+    width: 42%;
+}
+
+#last-name {
+    margin-left: 17.5%;
+    width: 42%;
+}
+
+#address {
+    margin-left: 22%;
+    width: 43%;
+}
+
+label[for="address"] {
+    display: flex;
+}
+
+#city {
+    margin-left: 27.5%;
+    width: 42%;
+}
+
+.state {
+    margin-left: 26%;
+    width: 44%;
+    padding: 4px;
+}
+
+#zip {
+    margin-left: 28.4%;
+    width: 42%;
+}
+
+#homePhone {
+    margin-left: 16%;
+    width: 22%;
+}
+
+#workPhone {
+    margin-left: 15.5%;
+    width: 42%;
+}
+
+.fax {
+    margin-left: 17.3%;
+    width: 22%;
+}
+
+.website {
+    display: flex;
+}
+
+.website-label {
+    display: flex;
+    flex-direction: column;
+}
+
+label[for="website"],
+label[for="link"] {
+    margin-left: 132px;
+    font-weight: normal;
+    
+}
+ 
+#website {
+    margin-left: 17.5%;
+    width: 64%;
+}
+
+#link {
+    width: 64%;
+}
+
+label[for="link"] {
+    margin-top: -5px;
+}
+
+.email {
+    margin-left: 76px;
+    width: 250px;
+}
+
+
+
+/* тело формы с правой стороны */
+
+.right {
+    width: 50%;
+    border: none;
+}
+
+.time > p,
+.contact > p {
+    display: block;
+    width: 250px;
+}
+
+.time-radio, .contact-radio {
+    margin-left: 50px;
+    font-weight: normal;
+    margin-top: 10px;
+
+}
+
+.time, .contact {
+    display: flex;
+}
+
+.contact {
+    margin-top: 30px;
+}
+
+.contact-radio > label,
+.time-radio > label {
+    margin-bottom: -5px;
+    
+}
+
+
+label[for="message"] {
+    display: flex;
+    margin-top: 70px;
+}
+
+textarea[name="message"] {
+    margin-left: 240px;
+}
+
+/* подвал формы */
+footer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    background-color: #e3e3e3;
+    padding: 10px 0;
+}
+
+footer > input {
+    background-color: #91ba6f;
+    color: white;
+    font-weight: bold;
+    padding: 5px 17px;
+    border: none;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+footer > input:hover {
+    background-color: #8baf6e;
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        width: 500px;
+    }
+
+    .left {
+        width: 100%;;
+    } 
+    
+    .body {
+        display: inline;
+    }
+
+    #first-name, #last-name  {
+        width: 52%;
+    }
+
+    #address {
+        width: 53%;
+        margin-left: 23%;
+    }
+
+    #city {
+        margin-left: 29%;
+        width: 52%;
+    }
+
+    .state {
+        margin-left: 27.5%;
+        width: 54%;
+
+    }
+
+    #zip {
+        margin-left: 30.4%;
+        width: 52%;
+    }
+
+    textarea[name="message"] {
+        margin-left: 200px;
+    }
+}
